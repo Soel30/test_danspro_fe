@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#F3F7F9];
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.nav-item-active {
+    @apply font-semibold border-b-4 border-b-gray-800 py-6
+}
+
+.nav-item {
+    @apply font-semibold hover:border-b-4 hover:border-b-gray-800 py-6 transition-all duration-300 ease-in-out text-gray-500 hover:text-gray-800;
+}
+
+#content p {
+    @apply mb-2
+}
+
+
+#content ul {
+    @apply list-disc ml-5 mb-2
+}
+
+#apply p {
+    @apply mb-2
+}
+
+
+#apply ul {
+    @apply list-disc ml-5 mb-2
+}
+
+#apply a {
+    @apply text-blue-500
+}
+
+.nav-mobile-item {
+    @apply py-1 pl-5 w-full text-gray-500 hover:text-gray-800 hover:bg-gray-200 transition-all duration-300 ease-in-out hover:border-l-4 hover:border-gray-800 hover:pl-4;
+}
+
+.nav-mobile-item-active {
+    @apply py-1 border-l-4 border-gray-800 pl-4 w-full text-gray-800 bg-gray-200 py-3;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
